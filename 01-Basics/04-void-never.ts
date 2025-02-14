@@ -8,3 +8,19 @@ printMessage("message");
 function throwError(msg: string): never {
     throw new Error(msg);
 }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Void Return Type
+function logMessage(message: string): void {
+    console.log(message);
+}
+
+// Never Type (Never returns)
+function throwError1(message: string): never {
+    throw new Error(message);
+}
+
+function infiniteLoop(): never {
+    while(true) {}
+}
